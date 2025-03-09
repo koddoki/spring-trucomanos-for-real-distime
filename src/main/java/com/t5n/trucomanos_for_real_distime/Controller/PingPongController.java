@@ -10,7 +10,6 @@ public class PingPongController {
     @MessageMapping("/hello")
     @SendTo("/topic/greetings")
     public String greeting() throws Exception {
-        Thread.sleep(1000); // simulated delay
         return "SESSÃAAAAAAAAAAAAAAAAAAAAAAAAAAAO";
     }
 }
